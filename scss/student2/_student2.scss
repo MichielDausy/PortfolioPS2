@@ -1,0 +1,75 @@
+@use 'sass:color';
+
+.student2 {
+  // unique code for student 2
+  // Name student 2: Matthias Heylen
+  @import 'mixins';
+
+  h1 {
+    text-align: center;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  img {
+    @include width-and-Height(60%, auto);
+  }
+
+  .banner {
+    background-color: #2e2d2d;
+    height: 30%;
+    margin-bottom: 20px;
+
+    .carousel img {
+      text-align: center;
+      max-width: 30%;
+      max-height: 30%;
+      @include width-and-Height(30%, 30%);
+      margin: 3% auto 0;
+    }
+
+    .carousel-caption {
+      position: relative;
+      top: 0;
+      left: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: white;
+    }
+  }
+
+  .dynamic_text {
+    border: 3px solid #000;
+    background-color: color.invert($beige-color);
+    color: #ffbf00;
+  }
+
+  .demo {
+    margin-bottom: 20px;
+  }
+
+  .tryit a {
+    text-decoration: none;
+  }
+
+  .link {
+    background-color: #2e2d2d;
+  }
+
+  .card img {
+    margin: 0 auto;
+  }
+
+  .democss {
+    @include width-and-Height(400px, 400px);
+    border: 3px solid #000;
+    text-align: center;
+    p {
+      line-height: 40vh;
+    }
+  }
+}

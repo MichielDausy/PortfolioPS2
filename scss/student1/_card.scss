@@ -1,0 +1,144 @@
+.flip-card {
+  background-color: transparent;
+  @include width-and-Height(auto, 400px);
+  perspective: 1000px;
+}
+
+.flip-card-examples {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include width-and-Height(700px, 300px);
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  @include width-and-Height(100%, 100%);
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner-examples {
+  position: relative;
+  @include width-and-Height(100%, 100%);
+  text-align: left;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotatex(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  @include width-and-Height(100%, 100%);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front-examples, .flip-card-back-examples {
+  position: absolute;
+  @include width-and-Height(100%, 100%);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: $beige-color;
+  color: black;
+}
+
+.flip-card-front-examples {
+  background-color: $beige-color;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: $beige-color;
+  transform: rotateX(180deg);
+}
+
+.flip-card-back-examples {
+  background-color: $beige-color;
+  transform: rotateY(180deg);
+}
+
+.card {
+  height: 400px;
+  background-color: $beige-color;
+}
+
+.card-examples {
+  height: 300px;
+  background-color: $beige-color;
+}
+
+.card-text, .card-title {
+  color: #000;
+}
+
+.vertical-center-cart {
+  position: relative;
+  top: 0;
+}
+
+@media screen and (max-width: $medium) {
+  .flip-card {
+    background-color: transparent;
+    @include width-and-Height(auto, 500px);
+    perspective: 1000px;
+  }
+  .flip-card-inner {
+    position: relative;
+    @include width-and-Height(50%, 50%);
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    margin: auto;
+  }
+  .flip-card-inner {
+    position: relative;
+    @include width-and-Height(75%, 100%);
+    margin: auto;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  .card {
+    height: 500px;
+    background-color: $beige-color;
+  }
+
+}
+
+@media screen and (max-width: $large) {
+  .flip-card {
+    background-color: transparent;
+    @include width-and-Height(auto, 600px);
+    perspective: 1000px;
+  }
+  .flip-card-inner {
+    position: relative;
+    @include width-and-Height(50%, 50%);
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    margin: auto;
+  }
+  .flip-card-inner {
+    position: relative;
+    @include width-and-Height(50%, 100%);
+    margin: auto;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  .card {
+    height: 600px;
+    background-color: $beige-color;
+  }
+}

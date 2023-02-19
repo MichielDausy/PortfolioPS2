@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>factsonweb</title>
+        <meta name="author" content="Michiel Dausy" />
+        <meta property="og:site_name" content="Javascript for beginners" />
+        <meta property="og:title" content="Javascript for beginners" />
+        <meta property="og:description" content="This page is made to learn javascript!" />
+        <meta property="og:type" content="website" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="student3">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark p-3">
+                <div class="container">
+                    <a class="navbar-brand logo" href="index.html">factsonweb</a>
+                    <button
+                        class="navbar-toggler navbarButton"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title logo" id="offcanvasNavbarLabel">factsonweb</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://github.com/itfactory-tm/WebAdv-22-team-109">GitHub Team</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="offcanvasNavbarDropdown"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                        >Programming languages</a
+                                    >
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="student1page1.html"
+                                                >Python <i class="fa-brands fa-python"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student1page2.html">Java <i class="fa-brands fa-java"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student2page1.html">HTML <i class="fa-brands fa-html5"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student2page2.html"
+                                                >CSS <i class="fa-brands fa-css3-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Javascript <i class="fa-brands fa-js"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student3page2.html">C# <i class="fa-solid fa-c"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container javascript">
+            <h1 class="row col-md-6 title offset-md-3 justify-content-center">Javascript for beginners</h1>
+            <article class="row justify-content-md-around align-items-md-center">
+                <img class="col-6 offset-3 col-md-3 order-md-1 mb-3 mt-3" src="assets/student3/javascript.svg" alt="javascript logo" />
+                <div class="introductionText col-8 col-md-4 order-md-first offset-2">
+                    <h2>What is javascript?</h2>
+                    <p>
+                        Javascript is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and
+                        CSS. It is therefore used a lot for creating interactive websites, over 97% of all sites have javascript running on
+                        them because the language is implemented on all major web browsers.
+                    </p>
+                </div>
+            </article>
+
+            <article class="row">
+                <h1 class="col-md-6 offset-md-3 text-center">Projects in javascript</h1>
+                <hr />
+                <section id="javascriptProjects">
+                    <button
+                        type="button"
+                        class="btn btn-primary col-12 col-md-4 offset-md-4 mb-md-3 mb-2 p-3 p-md-2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#calculator"
+                    >
+                        Launch calculator
+                    </button>
+                    <button
+                        type="button"
+                        class="btn btn-secondary col-12 col-md-4 offset-md-3 mb-md-3 mb-2 p-3 p-md-2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#bmiCalculator"
+                    >
+                        Launch BMI calculator
+                    </button>
+                    <button
+                        type="button"
+                        class="btn btn-dark col-12 col-md-4 offset-md-5 mb-md-3 mb-2 p-3 mb-md-3 p-md-2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#RockPaperScissors"
+                    >
+                        Launch Rock, Paper, Scissors game
+                    </button>
+                </section>
+
+                <div
+                    class="modal fade"
+                    id="RockPaperScissors"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="RockPaperScissorsLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="RockPaperScissorsLabel">Rock, Paper, Scissors game</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="col-md-6 offset-md-3 text-center">
+                                    <p>Choose between:</p>
+                                    <div id="gameButtons" class="row flex-column align-items-center">
+                                        <button class="col-md-4 mb-md-2">Rock</button>
+                                        <button class="col-md-4 mb-md-2">Paper</button>
+                                        <button class="col-md-4">Scissors</button>
+                                        <div id="message" class="col-md-12"></div>
+                                        <div id="score" class="col-md-12"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="modal fade"
+                    id="bmiCalculator"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="bmiCalculatorLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bmiCalculatorLabel">Calculator</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="col-md-6 offset-md-3 text-center">
+                                    <div class="row">
+                                        <label for="weight">Enter your weight: </label>
+                                        <input type="number" id="weight" value="0" placeholder="weight" />
+                                        <label for="height">Enter your height: </label>
+                                        <input type="number" id="height" value="0" placeholder="height" />
+                                        <button id="bmiButton" class="col-md-6 offset-md-3">Calculate</button>
+                                        <div id="bmiResult" class="col-12"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="modal fade"
+                    id="calculator"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="calculatorLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="calculatorLabel">Calculator</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="col-md-6 offset-md-3 text-center">
+                                    <div id="inputsCalculator" class="row justify-content-around">
+                                        <label for="number1" class="col-md-5 mb-md-1">number1:</label>
+                                        <input type="number" id="number1" value="6" class="col-md-5 mb-md-1" />
+                                        <label for="number2" class="col-md-5 mb-md-1">number2:</label>
+                                        <input type="number" id="number2" value="2" class="col-md-5 mb-md-1" />
+                                        <div id="calculatorButtons">
+                                            <button class="col-md-12 mb-md-2">Add</button>
+                                            <button class="col-md-12 mb-md-2">Subtract</button>
+                                            <button class="col-md-12 mb-md-2">Multiply</button>
+                                            <button class="col-md-12 mb-md-2">Divide</button>
+                                        </div>
+                                        <label for="result" class="col-5">Result: </label>
+                                        <div id="result" class="col-5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container-md-fluid">
+                <section class="row IDE showOnMedium hideOnSmall">
+                    <h2 class="col-md-12 text-center mb-md-5">Popular IDE's to code your C# projects</h2>
+                    <div class="row flex-column">
+                        <div class="btn-group dropend col-md-4">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/student3/Visual_Studio.svg" alt="Visual Code" />
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://code.visualstudio.com/">Visit their site!</a></li>
+                                <li><a href="https://code.visualstudio.com/docs/?dv=win">Download for Windows</a></li>
+                                <li><a href="https://code.visualstudio.com/docs/?dv=linux64_deb">Download for Linux</a></li>
+                                <li><a href="https://code.visualstudio.com/docs/?dv=osx">Download for Mac</a></li>
+
+                                <!-- Dropdown menu links -->
+                            </ul>
+                        </div>
+
+                        <div class="btn-group dropstart col-md-4 offset-md-8">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/student3/JetBrains_Rider_Icon.svg" alt="Rider IDE" />
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://www.jetbrains.com/rider/">Visit their site!</a></li>
+                                <li><a href="https://www.jetbrains.com/rider/download/#section=windows">Download for Windows</a></li>
+                                <li><a href="https://www.jetbrains.com/rider/download/#section=linux">Download for Linux</a></li>
+                                <li><a href="https://www.jetbrains.com/rider/download/#section=mac">Download for Mac</a></li>
+                                <li></li>
+                                <!-- Dropdown menu links -->
+                            </ul>
+                        </div>
+
+                        <div class="btn-group dropend col-md-4">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/student3/eclipse.svg" alt="Eclipse aCute" />
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://projects.eclipse.org/projects/tools.acute">Visit their site!</a></li>
+                                <li>
+                                    <a
+                                        href="https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2022-03/R/eclipse-inst-jre-win64.exe&mirror_id=1190"
+                                        >Download</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <section style="background-color: #fff">
+                <p class="text-end p-4">
+                    <a href="#"><i class="fa-solid fa-arrow-up"></i> To the top</a>
+                </p>
+            </section>
+            <section class="mx-md-2 container-fluid">
+                <h3 class="text-center">FOLLOW US</h3>
+                <hr />
+                <ul class="row justify-content-around">
+                    <li class="col-1">
+                        <a href="https://www.facebook.com/ThomasMoreBE"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li class="col-1">
+                        <a href="https://twitter.com/ThomasMoreBE"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li class="col-1">
+                        <a href="https://www.instagram.com/thomasmore.be/"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="col-1">
+                        <a href="https://www.snapchat.com/add/thomasmorebe"><i class="fa-brands fa-snapchat"></i></a>
+                    </li>
+                    <li class="col-1">
+                        <a href="https://www.youtube.com/user/ThomasMoreBE"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li class="col-1">
+                        <a href="https://www.linkedin.com/uas/login?session_redirect=%2Fschool%2F15250290"
+                            ><i class="fa-brands fa-linkedin-in"></i
+                        ></a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h3 class="text-center">LOCATION</h3>
+                        <div class="text-center">
+                            <p>
+                                <i class="fa-solid fa-location-dot maxgrote"></i> Kleinhoefstraat 4 <br />
+                                2440 Geel <br />
+                                <i class="fa-solid fa-phone"></i> +32 14 56 23 10 <br />
+                                BTW BE 0409 667 028
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="text-center">MEMBERS OF TEAM 109</h3>
+                        <div class="text-center">
+                            <p>
+                                Elias Grinwis Plaat Stultjes <br />
+                                Matthias Heylen <br />
+                                Michiel Dausy
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="text-center">Contact</h3>
+                        <div class="text-center">
+                            <p>
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:r0892566@student.thomasmore.be">r0892566@student.thomasmore.be</a> <br />
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:r0468021@student.thomasmore.be">r0468021@student.thomasmore.be</a> <br />
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:r0900099@student.thomasmore.be">r0900099@student.thomasmore.be</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="copyright" class="row text-center">
+                <p class="col-6">@ 2022 Web advanced team 109</p>
+                <p class="col-6">
+                    <a style="color: #fff" href="https://www.thomasmore.be/"
+                        ><i class="fa-regular fa-copyright"></i> COPYRIGHT THOMAS MORE</a
+                    >
+                </p>
+            </section>
+        </footer>
+    </body>
+    <script src="js/student3page1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+</html>

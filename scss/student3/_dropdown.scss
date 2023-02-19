@@ -1,0 +1,19 @@
+@use 'sass:color';
+
+.dropend {
+  background-color: $main-color;
+  border-radius: 50px;
+  ul {
+    background-color: $white;
+  }
+  &:hover {
+    background-color: color.invert($main-color);
+  }
+  img {
+    @include widthAndHide(100%, auto);
+  }
+}
+
+.dropstart {
+  @extend .dropend;
+}

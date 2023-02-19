@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>factsonweb</title>
+        <meta name="author" content="Michiel Dausy" />
+        <meta property="og:site_name" content="C# for beginners" />
+        <meta property="og:title" content="C# for beginners" />
+        <meta property="og:description" content="This page is made to learn C#!" />
+        <meta property="og:type" content="website" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="student3">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark p-3">
+                <div class="container">
+                    <a class="navbar-brand logo" href="index.html">factsonweb</a>
+                    <button
+                        class="navbar-toggler navbarButton"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title logo" id="offcanvasNavbarLabel">factsonweb</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://github.com/itfactory-tm/WebAdv-22-team-109">GitHub Team</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="offcanvasNavbarDropdown"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                        >Programming languages</a
+                                    >
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="student1page1.html"
+                                                >Python <i class="fa-brands fa-python"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student1page2.html">Java <i class="fa-brands fa-java"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student2page1.html">HTML <i class="fa-brands fa-html5"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student2page2.html"
+                                                >CSS <i class="fa-brands fa-css3-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student3page1.html"
+                                                >Javascript <i class="fa-brands fa-js"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">C# <i class="fa-solid fa-c"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="csharp">
+            <article class="container-fluid container-md">
+                <section class="row justify-content-md-around align-items-md-center introduction">
+                    <h1 class="col-12 title justify-content-center text-center">C# for beginners</h1>
+                    <img class="col-6 col-md-3 logo offset-3 offset-md-0 mb-3" src="assets/student3/c--4.svg" alt="C# logo" />
+                    <div class="col-12 col-md-4 offset-md-2">
+                        <div class="hideOnSmall showOnMedium">
+                            <p>
+                                C# is a general-purpose programming language designed be Microsoft in 2000. Microsoft had a few goals in
+                                mind when creating the new language:
+                            </p>
+                            <ul>
+                                <li>They wanted to make a simple, modern and general-purpose object-oriented programming language.</li>
+                                <li>Suitable for developing for both embedded and hosted systems.</li>
+                            </ul>
+                        </div>
+
+                        <div class="accordion accordion-flush hideOnMedium" id="accordion">
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="firstHeading">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#introduction"
+                                        aria-expanded="false"
+                                        aria-controls="introduction"
+                                    >
+                                        What is C#?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="introduction"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="firstHeading"
+                                    data-bs-parent="#accordion"
+                                >
+                                    <div class="accordion-body">
+                                        C# is a general-purpose programming language designed be Microsoft in 2000. Microsoft had a few
+                                        goals in mind when creating the new language:
+                                        <ul>
+                                            <li>
+                                                They wanted to make a simple, modern and general-purpose object-oriented programming
+                                                language.
+                                            </li>
+                                            <li>Suitable for developing for both embedded and hosted systems.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="secondHeading">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#application"
+                                        aria-expanded="false"
+                                        aria-controls="application"
+                                    >
+                                        Examples of application in C#
+                                    </button>
+                                </h2>
+                                <div
+                                    id="application"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="secondHeading"
+                                    data-bs-parent="#accordion"
+                                >
+                                    <div class="accordion-body row justify-content-center">
+                                        <div class="card col-5 mb-2">
+                                            <img src="assets/student3/foto1.jpg" alt="Office" class="card-img-top" />
+                                            <div class="card-header">Microsoft Office</div>
+                                            <a href="https://www.office.com/" class="stretched-link"></a>
+                                        </div>
+                                        <div class="card col-5 offset-2 mb-2">
+                                            <img src="assets/student3/foto2.jpg" alt="Photoshop" class="card-img-top" />
+                                            <div class="card-header">Photoshop</div>
+                                            <a
+                                                href="https://www.adobe.com/be_nl/products/photoshop/landpb.html?mv=search&mv=search&sdid=LZ32SYVR&ef_id=CjwKCAjws8yUBhA1EiwAi_tpEXCPHRzCF3QHp9VBrCYKGa24Lk5IZNFIzmZNz7FCCTdVq9WmfV4v3hoCojEQAvD_BwE:G:s&s_kwcid=AL!3085!3!341188774281!e!!g!!photoshop!1465308942!62393293888&gclid=CjwKCAjws8yUBhA1EiwAi_tpEXCPHRzCF3QHp9VBrCYKGa24Lk5IZNFIzmZNz7FCCTdVq9WmfV4v3hoCojEQAvD_BwE"
+                                                class="stretched-link"
+                                            ></a>
+                                        </div>
+                                        <div class="card col-5 mb-2">
+                                            <img src="assets/student3/foto3.jpg" alt="Visual Code" class="card-img-top" />
+                                            <div class="card-header">Visual Code</div>
+                                            <a href="https://code.visualstudio.com/" class="stretched-link"></a>
+                                        </div>
+                                        <div class="card col-5 offset-2 mb-2">
+                                            <img src="assets/student3/foto4.jpg" alt="Unity" class="card-img-top" />
+                                            <div class="card-header">Unity</div>
+                                            <a href="https://unity.com/" class="stretched-link"></a>
+                                        </div>
+                                        <div class="card col-5 mb-2">
+                                            <img src="assets/student3/foto6.jpg" alt="Heartstone" class="card-img-top" />
+                                            <div class="card-header">Heartstone</div>
+                                            <a href="https://playhearthstone.com/en-us" class="stretched-link"></a>
+                                        </div>
+                                        <div class="card col-5 offset-2 mb-2">
+                                            <img src="assets/student3/foto7.jpg" alt="Pinterest" class="card-img-top" />
+                                            <div class="card-header">Pinterest</div>
+                                            <a href="https://nl.pinterest.com/" class="stretched-link"></a>
+                                        </div>
+                                        <div class="card col-5 mb-2">
+                                            <img src="assets/student3/foto8.jpg" alt="Tableau" class="card-img-top" />
+                                            <div class="card-header">Tableau</div>
+                                            <a href="https://www.tableau.com/" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="thirdHeading">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#IDE"
+                                        aria-expanded="false"
+                                        aria-controls="IDE"
+                                    >
+                                        Editors
+                                    </button>
+                                </h2>
+                                <div
+                                    id="IDE"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="thirdHeading"
+                                    data-bs-parent="#accordion"
+                                >
+                                    <div class="accordion-body">
+                                        <section class="row IDE showOnMedium">
+                                            <h2 class="col-md-12 text-center mb-md-5">Popular IDE's to code your C# projects</h2>
+                                            <div class="row flex-column align-items-center text-center">
+                                                <div>
+                                                    <img src="assets/student3/Visual_Studio.svg" alt="Visual Code" width="50%" />
+                                                    <ul>
+                                                        <li><a href="https://code.visualstudio.com/">Visit their site!</a></li>
+                                                        <li>
+                                                            <a href="https://code.visualstudio.com/docs/?dv=win">Download for Windows</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://code.visualstudio.com/docs/?dv=linux64_deb"
+                                                                >Download for Linux</a
+                                                            >
+                                                        </li>
+                                                        <li><a href="https://code.visualstudio.com/docs/?dv=osx">Download for Mac</a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div>
+                                                    <img src="assets/student3/JetBrains_Rider_Icon.svg" alt="Rider IDE" width="50%" />
+                                                    <ul>
+                                                        <li><a href="https://www.jetbrains.com/rider/">Visit their site!</a></li>
+                                                        <li>
+                                                            <a href="https://www.jetbrains.com/rider/download/#section=windows"
+                                                                >Download for Windows</a
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.jetbrains.com/rider/download/#section=linux"
+                                                                >Download for Linux</a
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.jetbrains.com/rider/download/#section=mac"
+                                                                >Download for Mac</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div>
+                                                    <img src="assets/student3/eclipse.svg" alt="Eclipse aCute" width="50%" />
+                                                    <ul>
+                                                        <li>
+                                                            <a href="https://projects.eclipse.org/projects/tools.acute"
+                                                                >Visit their site!</a
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2022-03/R/eclipse-inst-jre-win64.exe&mirror_id=1190"
+                                                                >Download</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <article class="container-fluid">
+                <section class="applications row text-center hideOnSmall showOnMedium p-md-3">
+                    <h2 class="col-md-12">Some examples of applications written in C#</h2>
+                    <figure>
+                        <div class="row justify-content-around align-items-center">
+                            <div id="App" class="carousel carousel-dark slide col-md-6" data-bs-target="carousel">
+                                <div class="carousel-indicators col-md-8">
+                                    <button
+                                        type="button"
+                                        data-bs-target="#App"
+                                        data-bs-slide-to="0"
+                                        class="active"
+                                        aria-current="true"
+                                        aria-label="Slide 1"
+                                    ></button>
+                                    <button type="button" data-bs-target="#App" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#App" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#App" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#App" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#App" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#App" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="assets/student3/foto1.jpg" alt="Office" />
+                                        <div class="carousel-caption d-block text-dark">
+                                            <h4>Windows apps</h4>
+                                            <p>Microsoft Office</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="assets/student3/foto2.jpg" alt="Photoshop" />
+                                        <div class="carousel-caption d-block text-dark">
+                                            <h4>Windows apps</h4>
+                                            <p>Photoshop</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="assets/student3/foto3.jpg" alt="Visual Code" />
+                                        <div class="carousel-caption d-block text-dark">
+                                            <h4>Windows apps</h4>
+                                            <p>Visual Studio Code</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="assets/student3/foto4.jpg" alt="Unity" />
+                                        <div class="carousel-caption d-block text-dark">
+                                            <h4>Games</h4>
+                                            <p>Unity</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="assets/student3/foto6.jpg" alt="Heartstone" />
+                                        <div class="carousel-caption d-block text-dark">
+                                            <h4>Games</h4>
+                                            <p>Heartstone</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="assets/student3/foto7.jpg" alt="Pinterest" />
+                                        <div class="carousel-caption d-block text-dark">
+                                            <h4>Mobile Apps</h4>
+                                            <p>Pinterest</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="assets/student3/foto8.jpg" alt="Tableau" />
+                                        <div class="carousel-caption d-block text-dark">
+                                            <h4>Mobile Apps</h4>
+                                            <p>Tableau</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#App" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon text-dark" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#App" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon text-dark" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </figure>
+                </section>
+            </article>
+
+            <article class="container-md-fluid">
+                <section class="row IDE showOnMedium hideOnSmall">
+                    <h2 class="col-md-12 text-center mb-md-5">Popular IDE's to code your C# projects</h2>
+                    <div class="row flex-column">
+                        <div class="btn-group dropend col-md-4">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/student3/Visual_Studio.svg" alt="Visual Code" />
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://code.visualstudio.com/">Visit their site!</a></li>
+                                <li><a href="https://code.visualstudio.com/docs/?dv=win">Download for Windows</a></li>
+                                <li><a href="https://code.visualstudio.com/docs/?dv=linux64_deb">Download for Linux</a></li>
+                                <li><a href="https://code.visualstudio.com/docs/?dv=osx">Download for Mac</a></li>
+
+                                <!-- Dropdown menu links -->
+                            </ul>
+                        </div>
+
+                        <div class="btn-group dropstart col-md-4 offset-md-8">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/student3/JetBrains_Rider_Icon.svg" alt="Rider IDE" />
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://www.jetbrains.com/rider/">Visit their site!</a></li>
+                                <li><a href="https://www.jetbrains.com/rider/download/#section=windows">Download for Windows</a></li>
+                                <li><a href="https://www.jetbrains.com/rider/download/#section=linux">Download for Linux</a></li>
+                                <li><a href="https://www.jetbrains.com/rider/download/#section=mac">Download for Mac</a></li>
+                                <li></li>
+                                <!-- Dropdown menu links -->
+                            </ul>
+                        </div>
+
+                        <div class="btn-group dropend col-md-4">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/student3/eclipse.svg" alt="Eclipse aCute" />
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://projects.eclipse.org/projects/tools.acute">Visit their site!</a></li>
+                                <li>
+                                    <a
+                                        href="https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2022-03/R/eclipse-inst-jre-win64.exe&mirror_id=1190"
+                                        >Download</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <footer>
+                <section style="background-color: #fff">
+                    <p class="text-end p-4">
+                        <a href="#"><i class="fa-solid fa-arrow-up"></i> To the top</a>
+                    </p>
+                </section>
+                <section class="mx-md-2">
+                    <h3 class="text-center">FOLLOW US</h3>
+                    <hr />
+                    <ul class="row justify-content-around">
+                        <li class="col-1">
+                            <a href="https://www.facebook.com/ThomasMoreBE"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li class="col-1">
+                            <a href="https://twitter.com/ThomasMoreBE"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li class="col-1">
+                            <a href="https://www.instagram.com/thomasmore.be/"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="col-1">
+                            <a href="https://www.snapchat.com/add/thomasmorebe"><i class="fa-brands fa-snapchat"></i></a>
+                        </li>
+                        <li class="col-1">
+                            <a href="https://www.youtube.com/user/ThomasMoreBE"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                        <li class="col-1">
+                            <a href="https://www.linkedin.com/uas/login?session_redirect=%2Fschool%2F15250290"
+                                ><i class="fa-brands fa-linkedin-in"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h3 class="text-center">LOCATION</h3>
+                            <div class="text-center">
+                                <p>
+                                    <i class="fa-solid fa-location-dot maxgrote"></i> Kleinhoefstraat 4 <br />
+                                    2440 Geel <br />
+                                    <i class="fa-solid fa-phone"></i> +32 14 56 23 10 <br />
+                                    BTW BE 0409 667 028
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <h3 class="text-center">MEMBERS OF TEAM 109</h3>
+                            <div class="text-center">
+                                <p>
+                                    Elias Grinwis Plaat Stultjes <br />
+                                    Matthias Heylen <br />
+                                    Michiel Dausy
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <h3 class="text-center">Contact</h3>
+                            <div class="text-center">
+                                <p>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <a href="mailto:r0892566@student.thomasmore.be">r0892566@student.thomasmore.be</a> <br />
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <a href="mailto:r0468021@student.thomasmore.be">r0468021@student.thomasmore.be</a> <br />
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <a href="mailto:r0900099@student.thomasmore.be">r0900099@student.thomasmore.be</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="copyright" class="row text-center">
+                    <p class="col-6">@ 2022 Web advanced team 109</p>
+                    <p class="col-6">
+                        <a style="color: #fff" href="https://www.thomasmore.be/"
+                            ><i class="fa-regular fa-copyright"></i> COPYRIGHT THOMAS MORE</a
+                        >
+                    </p>
+                </section>
+            </footer>
+        </main>
+    </body>
+    <script src="js/student3page2.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+</html>

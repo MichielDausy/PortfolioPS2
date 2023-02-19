@@ -1,0 +1,9 @@
+@mixin width-and-Height($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin top-and-left($top, $left) {
+  top: $top;
+  left: $left;
+}

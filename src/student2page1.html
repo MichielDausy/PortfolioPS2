@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>factsonweb</title>
+        <meta name="author" content="Matthias Heylen" />
+        <meta property="og:site_name" content="HTML FOR BEGINNERS" />
+        <meta property="og:title" content="HTML FOR BEGINNERS" />
+        <meta property="og:description" content="This page is made to learn HTML!" />
+        <meta property="og:type" content="website" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="student2">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark p-3">
+                <div class="container">
+                    <a class="navbar-brand logo" href="index.html">factsonweb</a>
+                    <button
+                        class="navbar-toggler navbarButton"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title logo" id="offcanvasNavbarLabel">factsonweb</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://github.com/itfactory-tm/WebAdv-22-team-109">GitHub Team</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="offcanvasNavbarDropdown"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        Programming languages
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="student1page1.html"
+                                                >Python <i class="fa-brands fa-python"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student1page2.html">Java <i class="fa-brands fa-java"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student2page1.html">HTML <i class="fa-brands fa-html5"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student2page2.html">CSS <i class="fa-brands fa-css3"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student3page1.html"
+                                                >Javascript <i class="fa-brands fa-js"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student3page2.html">C# <i class="fa-solid fa-c"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="pt-5 pb-5">
+            <article class="pt-4 pb-4 container-fluid container-md">
+                <h1>HTML FOR BEGINNERS</h1>
+                <div class="blockline">
+                    <p class="line"></p>
+                </div>
+                <div class="row align-items-center p-4">
+                    <div class="col-sm-12 col-md-6">
+                        <h2>What is HTML</h2>
+                        <p class="justify">
+                            HTML is an acronym which stands for Hyper Text Markup Language which is used for creating web pages and web
+                            applications. Let's see what is meant by Hypertext Markup Language, and Web page.
+                        </p>
+                        <p>
+                            <span class="bold">Hyper Text:</span> HyperText simply means "Text within Text." A text has a link within it, is
+                            a hypertext. Whenever you click on a link which brings you to a new webpage, you have clicked on a hypertext.
+                            HyperText is a way to link two or more web pages (HTML documents) with each other.
+                        </p>
+                        <p>
+                            <span class="bold">Markup language:</span> A markup language is a computer language that is used to apply layout
+                            and formatting conventions to a text document. Markup language makes text more interactive and dynamic. It can
+                            turn text into images, tables, links, etc.
+                        </p>
+                        <p>
+                            <span class="bold">Web Page:</span> A web page is a document which is commonly written in HTML and translated by
+                            a web browser. A web page can be identified by entering an URL. A Web page can be of the static or dynamic type.
+                            With the help of HTML only, we can create static web pages.
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 offset-2">
+                        <img class="html_logo" src="assets/student2/HTML5_logo.svg" alt="html_logo" />
+                    </div>
+                </div>
+            </article>
+            <div class="banner pb-4 pt-4">
+                <div class="container-fluid container-md">
+                    <div class="row">
+                        <div id="carousel_html" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button
+                                    type="button"
+                                    data-bs-target="#carousel_html"
+                                    data-bs-slide-to="0"
+                                    class="active"
+                                    aria-current="true"
+                                    aria-label="Slide 1"
+                                ></button>
+                                <button type="button" data-bs-target="#carousel_html" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel_html" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img
+                                        src="assets/student2/visualstudiocode_logo.png"
+                                        class="d-block w-100"
+                                        alt="Visual Studio Code logo"
+                                    />
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p>Use powerful development environments like Visual Studio Code.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/student2/bootstrap_logo.png" class="d-block w-100" alt="Bootstrap logo" />
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p>Take your website to the next level with frameworks like Bootstrap.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/student2/websites.jpg" class="d-block w-100" alt="websites" />
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p>Build web pages to suit your needs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel_html" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel_html" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <article class="pt-4 pb-4 container-fluid container-md">
+                <div class="row align-items-center p-4">
+                    <div class="demo col-sm-12 col-md-4">
+                        <h2>HTML SYNTAX: EXAMPLE</h2>
+                        <p>View a small example of how to write a basic title in HTML yourself?</p>
+                        <button onclick="typeWriterTitle()" type="button" class="btn btn-dark">Show me</button>
+                    </div>
+                    <div class="demo dynamic_text col-sm-12 col-md-6 offset-md-2">
+                        <p>
+                            &lt;html&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="demoTitle"></span><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br />
+                            &lt;/html&gt;
+                        </p>
+                    </div>
+                </div>
+                <div class="row p-4">
+                    <div class="col-sm-12 mb-5">
+                        <h2>LEARNING HTML: SOURCES</h2>
+                    </div>
+                    <div class="col-sm-12 col-md-4 mb-sm-1">
+                        <div class="card bg-light" style="width: 18rem">
+                            <img src="assets/student2/w3schools_logo.jpg" class="card-img-top" alt="W3schools logo" />
+                            <div class="card-body">
+                                <h5 class="card-title">W3Schools</h5>
+                                <p class="card-text">A great website for learning more about HTML.</p>
+                                <a href="https://www.w3schools.com/" class="btn btn-dark stretched-link">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 mb-sm-1">
+                        <div class="card bg-light" style="width: 18rem">
+                            <img src="assets/student2/codecademy_logo.png" class="card-img-top" alt="Codecademy logo" />
+                            <div class="card-body">
+                                <h5 class="card-title">Codecademy</h5>
+                                <p class="card-text">A website with many exercises that will truly test your skills.</p>
+                                <a href="https://www.codecademy.com/learn/learn-html" class="btn btn-dark stretched-link">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card bg-light" style="width: 18rem">
+                            <img src="assets/student2/w3c_logo.png" class="card-img-top" alt="W3C logo" />
+                            <div class="card-body">
+                                <h5 class="card-title">W3C</h5>
+                                <p class="card-text">A great place to validate the HTML code you've written.</p>
+                                <a href="https://validator.w3.org/" class="btn btn-dark stretched-link">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <section style="background-color: #fff">
+                <p class="text-end p-4">
+                    <a href="#"><i class="fa-solid fa-arrow-up"></i> To the top</a>
+                </p>
+            </section>
+            <section class="mx-md-2">
+                <h3 class="text-center">FOLLOW US</h3>
+                <hr />
+                <ul class="row justify-content-around">
+                    <li class="col-1">
+                        <a href="https://www.facebook.com/ThomasMoreBE"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li class="col-1">
+                        <a href="https://twitter.com/ThomasMoreBE"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li class="col-1">
+                        <a href="https://www.instagram.com/thomasmore.be/"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="col-1">
+                        <a href="https://www.snapchat.com/add/thomasmorebe"><i class="fa-brands fa-snapchat"></i></a>
+                    </li>
+                    <li class="col-1">
+                        <a href="https://www.youtube.com/user/ThomasMoreBE"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li class="col-1">
+                        <a href="https://www.linkedin.com/uas/login?session_redirect=%2Fschool%2F15250290"
+                            ><i class="fa-brands fa-linkedin-in"></i
+                        ></a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h3 class="text-center">LOCATION</h3>
+                        <div class="text-center">
+                            <p>
+                                <i class="fa-solid fa-location-dot maxgrote"></i> Kleinhoefstraat 4 <br />
+                                2440 Geel <br />
+                                <i class="fa-solid fa-phone"></i> +32 14 56 23 10 <br />
+                                BTW BE 0409 667 028
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="text-center">MEMBERS OF TEAM 109</h3>
+                        <div class="text-center">
+                            <p>
+                                Elias Grinwis Plaat Stultjes <br />
+                                Matthias Heylen <br />
+                                Michiel Dausy
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="text-center">Contact</h3>
+                        <div class="text-center">
+                            <p>
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:r0892566@student.thomasmore.be">r0892566@student.thomasmore.be</a> <br />
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:r0468021@student.thomasmore.be">r0468021@student.thomasmore.be</a> <br />
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:r0900099@student.thomasmore.be">r0900099@student.thomasmore.be</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="copyright" class="row text-center">
+                <p class="col-6">@ 2022 Web advanced team 109</p>
+                <p class="col-6">
+                    <a style="color: #fff" href="https://www.thomasmore.be/"
+                        ><i class="fa-regular fa-copyright"></i> COPYRIGHT THOMAS MORE</a
+                    >
+                </p>
+            </section>
+        </footer>
+        <script src="js/student2page1.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

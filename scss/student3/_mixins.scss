@@ -1,0 +1,6 @@
+@use 'sass:color';
+
+@mixin widthAndHide($width, $height) {
+  width: $width;
+  height: $height;
+} ;

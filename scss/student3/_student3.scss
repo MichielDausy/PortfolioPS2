@@ -1,0 +1,62 @@
+.student3 {
+  // unique code for student 3
+  // Name student 3: Michiel Dausy
+
+  @import 'mixins';
+  @import 'type';
+  @import 'cards';
+  @import 'carousel';
+  @import 'dropdown';
+
+  // C# page
+  .csharp {
+    .applications {
+      border: 3px solid $grey;
+      background: linear-gradient(to right, $main-color, $white, $main-color);
+    }
+
+    #introduction ul {
+      list-style-type: circle;
+    }
+
+    @media screen and(min-width: $medium) {
+      .showOnMedium {
+        display: block;
+      }
+
+      .hideOnMedium {
+        display: none;
+      }
+
+      .logo {
+        width: 300px;
+      }
+
+      .IDE {
+        background-color: $beige-color;
+      }
+
+      .modal-dialog {
+        height: 100vh;
+        display: flex;
+        .modal-content {
+          margin: auto;
+          height: fit-content;
+        }
+      }
+    }
+  }
+
+  // Javascript page
+  .javascript {
+    #calculatorButtons {
+      button {
+        background-color: $white;
+      }
+    }
+
+    .modal-dialog {
+      margin: 20vh auto 0 auto;
+    }
+  }
+}

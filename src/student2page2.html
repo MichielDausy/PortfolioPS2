@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>factsonweb</title>
+        <meta name="author" content="Matthias Heylen" />
+        <meta property="og:site_name" content="CSS FOR BEGINNERS" />
+        <meta property="og:title" content="CSS FOR BEGINNERS" />
+        <meta property="og:description" content="This page is made to learn CSS!" />
+        <meta property="og:type" content="website" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="student2">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark p-3">
+                <div class="container">
+                    <a class="navbar-brand logo" href="index.html">factsonweb</a>
+                    <button
+                        class="navbar-toggler navbarButton"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title logo" id="offcanvasNavbarLabel">factsonweb</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://github.com/itfactory-tm/WebAdv-22-team-109">GitHub Team</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="offcanvasNavbarDropdown"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        Programming languages
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="student1page1.html"
+                                                >Python <i class="fa-brands fa-python"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student1page2.html">Java <i class="fa-brands fa-java"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student2page1.html">HTML <i class="fa-brands fa-html5"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student2page2.html">CSS <i class="fa-brands fa-css3"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student3page1.html"
+                                                >Javascript <i class="fa-brands fa-js"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="student3page2.html">C# <i class="fa-solid fa-c"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="pt-5 pb-5">
+            <article class="pt-4 pb-4 container-fluid container-md">
+                <h1>CSS FOR BEGINNERS</h1>
+                <div class="blockline">
+                    <p class="line"></p>
+                </div>
+                <div class="row align-items-center p-4">
+                    <div class="col-sm-12 col-md-6">
+                        <h2>What is CSS?</h2>
+                        <p>
+                            Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process
+                            of making web pages presentable.
+                        </p>
+                        <p>
+                            CSS handles the look and feel part of a web page. Using CSS, you can control the color of the text, the style of
+                            fonts, the spacing between paragraphs, how columns are sized and laid out, what background images or colors are
+                            used, layout designs,variations in display for different devices and screen sizes as well as a variety of other
+                            effects.
+                        </p>
+                        <p>
+                            CSS is easy to learn and understand but it provides powerful control over the presentation of an HTML document.
+                            Most commonly, CSS is combined with the markup languages HTML or XHTML.
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 offset-2">
+                        <img class="css_logo" src="assets/student2/css3_logo.svg" alt="css_logo" />
+                    </div>
+                </div>
+            </article>
+            <div class="banner pb-4 pt-4">
+                <div class="container-fluid container-md">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Learn More about CSS</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <article class="pt-4 pb-4 container-fluid container-md">
+                <div class="row align-items-center p-4 d-md-none d-lg-flex">
+                    <div class="demo col-sm-12 col-md-4">
+                        <h2>CSS: EXAMPLE</h2>
+                        <p>Want to test out some possibilities of CSS yourself?</p>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="btn-group-vertical" role="group" aria-label="Basic mixed styles example">
+                                    <button onclick="up()" type="button" class="btn btn-dark">Up</button>
+                                    <button onclick="down()" type="button" class="btn btn-dark">Down</button>
+                                    <button onclick="left()" type="button" class="btn btn-dark">Left</button>
+                                    <button onclick="right()" type="button" class="btn btn-dark">Right</button>
+                                    <button onclick="center()" type="button" class="btn btn-dark">Center</button>
+                                    <button onclick="white()" type="button" class="btn btn-dark">White background</button>
+                                    <button onclick="dark()" type="button" class="btn btn-dark">Dark background</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="demo" class="democss col-sm-12 col-md-6 offset-md-2">
+                        <p>Hello, I am some text!</p>
+                    </div>
+                </div>
+                <div class="row p-4">
+                    <div class="col-sm-12 mb-5">
+                        <h2>LEARNING CSS: SOURCES</h2>
+                    </div>
+                    <div class="col-sm-12 col-md-4 mb-sm-1">
+                        <div class="card bg-light" style="width: 18rem">
+                            <img src="assets/student2/sololearn_logo.png" class="card-img-top" alt="Sololearn logo" />
+                            <div class="card-body">
+                                <h5 class="card-title">Sololearn</h5>
+                                <p class="card-text">A great website for learning more about CSS.</p>
+                                <a href="https://www.sololearn.com/home" class="btn btn-dark stretched-link">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 mb-sm-1">
+                        <div class="card bg-light" style="width: 18rem">
+                            <img src="assets/student2/codepen_logo.png" class="card-img-top" alt="Codepen logo" />
+                            <div class="card-body">
+                                <h5 class="card-title">CodePen</h5>
+                                <p class="card-text">A place for you to build, test and discover front-end code</p>
+                                <a href="https://codepen.io/" class="btn btn-dark stretched-link">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card bg-light" style="width: 18rem">
+                            <img src="assets/student2/w3c_logo.png" class="card-img-top" alt="W3C logo" />
+                            <div class="card-body">
+                                <h5 class="card-title">W3C</h5>
+                                <p class="card-text">A great place to validate the CSS code you've written.</p>
+                                <a href="https://jigsaw.w3.org/css-validator/" class="btn btn-dark stretched-link">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <section style="background-color: #fff">
+                <p class="text-end p-4">
+                    <a href="#"><i class="fa-solid fa-arrow-up"></i> To the top</a>
+                </p>
+            </section>
+            <section class="mx-md-2">
+                <h3 class="text-center">FOLLOW US</h3>
+                <hr />
+                <ul class="row justify-content-around">
+                    <li class="col-1">
+                        <a href="https://www.facebook.com/ThomasMoreBE"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li class="col-1">
+                        <a href="https://twitter.com/ThomasMoreBE"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li class="col-1">
+                        <a href="https://www.instagram.com/thomasmore.be/"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="col-1">
+                        <a href="https://www.snapchat.com/add/thomasmorebe"><i class="fa-brands fa-snapchat"></i></a>
+                    </li>
+                    <li class="col-1">
+                        <a href="https://www.youtube.com/user/ThomasMoreBE"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li class="col-1">
+                        <a href="https://www.linkedin.com/uas/login?session_redirect=%2Fschool%2F15250290"
+                            ><i class="fa-brands fa-linkedin-in"></i
+                        ></a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h3 class="text-center">LOCATION</h3>
+                        <div class="text-center">
+                            <p>
+                                <i class="fa-solid fa-location-dot maxgrote"></i> Kleinhoefstraat 4 <br />
+                                2440 Geel <br />
+                                <i class="fa-solid fa-phone"></i> +32 14 56 23 10 <br />
+                                BTW BE 0409 667 028
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="text-center">MEMBERS OF TEAM 109</h3>
+                        <div class="text-center">
+                            <p>
+                                Elias Grinwis Plaat Stultjes <br />
+                                Matthias Heylen <br />
+                                Michiel Dausy
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="text-center">Contact</h3>
+                        <div class="text-center">
+                            <p>
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:r0892566@student.thomasmore.be">r0892566@student.thomasmore.be</a> <br />
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:r0468021@student.thomasmore.be">r0468021@student.thomasmore.be</a> <br />
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:r0900099@student.thomasmore.be">r0900099@student.thomasmore.be</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="copyright" class="row text-center">
+                <p class="col-6">@ 2022 Web advanced team 109</p>
+                <p class="col-6">
+                    <a style="color: #fff" href="https://www.thomasmore.be/"
+                        ><i class="fa-regular fa-copyright"></i> COPYRIGHT THOMAS MORE</a
+                    >
+                </p>
+            </section>
+        </footer>
+        <script src="js/student2page2.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

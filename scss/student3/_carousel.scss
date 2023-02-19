@@ -1,0 +1,45 @@
+.carousel {
+  padding-bottom: 110px;
+  .carousel-item {
+    position: relative;
+    img {
+      @include widthAndHide(200px, auto);
+    }
+    .carousel-caption {
+      position: relative;
+      top: 0;
+      left: 0;
+      padding: 20px;
+      bottom: -100px;
+    }
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  @include widthAndHide(100px, 100px);
+  background-size: 100% 100%;
+  border-radius: 50%;
+  border: 3px solid $main-color;
+  background-image: none;
+}
+
+.carousel-control-prev-icon {
+  margin-left: -200px;
+}
+
+.carousel-control-next-icon {
+  margin-right: -200px;
+}
+
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 55px;
+  color: $main-color;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: $main-color;
+}
