@@ -4,19 +4,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 /* import the necessary Bootstrap files */
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
 
 /* override Bootstrap variables (before importing Bootstrap!!!) */
-@import "variables";
+@import 'variables';
 
 /* finally, import Bootstrap to set the changes! */
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 /* create custom styles/partials */
-@import "reboot";
-@import "index";
+@import 'reboot';
+@import 'index';
 @import 'student1/student1';
-@import 'student2/student2';
-@import 'student3/student3';
+//@import 'student2/student2';
+//@import 'student3/student3';

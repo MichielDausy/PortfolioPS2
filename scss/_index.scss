@@ -1,10 +1,10 @@
 .mainImage {
-  background-image: url("/assets/mainPicture.jpg");
+  //background-image: url('/assets/mainPicture.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgba(50, 50, 50, 1);
   height: 100vh;
-
 }
 
 .blockHeight {
@@ -17,7 +17,6 @@
   position: relative;
 }
 
-
 .center {
   position: relative;
 
@@ -29,7 +28,6 @@
     height: auto;
     object-fit: cover;
     filter: drop-shadow(0px 10px 3px $main-color);
-
   }
 
   div {
@@ -42,7 +40,6 @@
     }
   }
 }
-
 
 .mainText {
   position: absolute;
