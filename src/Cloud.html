@@ -68,7 +68,7 @@
                 </div>
             </nav>
         </header>
-        <main class="pt-5 pb-5 mainJava">
+        <main class="pt-5 pb-4 mainJava">
             <div class="pt-4 pb-4">
                 <div class="main-container">
                     <h1>CLOUD STORAGE SEARCHER</h1>
@@ -100,117 +100,31 @@
             </div>
 
             <div style="background-color: #2e2d2d">
-                <div class="main-container vertical-align pt-4 pb-4 text-white">
+                <div class="main-container vertical-align pt-4 text-white">
                     <div class="row align-items-center p-4">
                         <!--<div class="col-sm-12 col-md-6">
                             <img src="assets/Platforms.png" alt="Platforms" style="max-width: 500px" />
                         </div>-->
                         <div class="col-sm-12 col-md-6 offset-md-6">
                             <h3>HOW DOES THE APPLICATION WORK?</h3>
-                            <p >I have many subscriptions on different cloud storage platforms where I place my files. The platforms that I currently use are:
-                            <ul>
-                                <li>Google Drive</li>
-                                <li>Dropbox</li>
-                                <li>Box</li>
-                            </ul>
-                            </p>
-                            <p>
-                                The problem is that I often forgot where I placed my files and on which platform it was located. So I made an application that searches for a file or folder and says where it is located.
-                            </p>
+                            <p >A user enters the name of a file/folder into a form. The application then uses the API of the differnet platforms to make a connection to the user's personal cloud storageand displays a list of locations where the file/folder is located.</p>
+                            <p>The only problem that I couldn't figure out in this project is that you need credentials of the user and based on these credentials the API gives a token to cummunicate with the API and locate the files/folders.</p>
+                            <p>The problem is that you need to have a registered application with the cloud storage providers which can take a while because they need to test your application etc.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-
-            <div class="pt-4 pb-4 javaSecond">
-                <div class="style">
-                    <div class="main-container">
-                        <h3 class="text-center text-white p-4">HOW DOES THE APPLICATION WORK?</h3>
-                        <div class="p-4 text-start">
-                            <p class="text-white">
-                                Java can be used to build applications for a wide range of platforms. Desktops, servers, mobile phones,
-                                tablets, Blu-ray players, televisions, and web browsers all use Java, and developers can write Java-based
-                                applications for any of these platforms.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main-container pt-4 pb-4" style="margin-top: 50px">
-                <h3 class="text-center">BEFORE YOU CAN MAKE YOUR FIRST JAVA PROGRAM</h3>
-                <h5 class="text-center">YOU NEED TO UNDERSTAND THE <span class="text-decoration-underline">SYNTAX</span></h5>
-                <div class="text-center">
-                    <a href="#syntax"><i class="fa-solid fa-arrow-down fa-3x"></i></a>
-                </div>
-            </div>
-
-            <div class="pt-4 pb-4 javaThird" id="syntax">
-                <div class="javaSyntax">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6 clippath1">
-                            <div class="main-container">
-                                <div class="absoluteStyle">
-                                    <h2 class="text-start p-4 text-white-50">WHAT IS A SYNTAX IN JAVA?</h2>
-                                    <p class="text-start p-4 text-white" style="max-width: 350px">
-                                        The syntax of Java refers to the set of rules defining how a Java program is written and
-                                        interpreted.
-                                    </p>
-                                    <p
-                                        id="showJavaExample"
-                                        class="btn text-white-50 m-4 p-3 showJavaExample"
-                                        style="border: 1px solid #000"
-                                    >
-                                        CLick here to see a java example
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 col-md-6 clippath2">
-                            <div class="main-container">
-                                <div class="absoluteStyle">
-                                    <div id="javaExample" class="card-examples javaExample">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Java Example:</h4>
-                                            <pre><code class="code" id="code">public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello World");
-  }
-}</code></pre>
-                                            <button id="runCode" type="button" class="btn btn-outline-primary runCode">Run code</button>
-                                            <button id="restCode" type="button" class="codeOtherPage">
-                                                Reset <i class="fa-solid fa-trash-arrow-up"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pt-4 pb-4 javaDivbestEditors">
-                <div class="javaBestEditors">
-                    <div class="main-container">
-                        <h3 class="pt-4 text-center text-black">
-                            THESE ARE THE <span class="fw-bold text-decoration-underline">3 BEST EDITORS</span> FOR JAVA
-                        </h3>
-                        <h5 class="text-center">Click on each image to find out more information!</h5>
-                        <div class="img-container">
-                            <img id="image1" src="assets/student1/eclipse.svg" alt="image editor 1" />
-                            <img id="image2" src="assets/student1/intellij.svg" alt="image editor 2" />
-                            <img id="image3" src="assets/student1/netbeans.png" alt="image editor 3" />
-                        </div>
-                        <div class="alert text-block">
-                            <span><i class="fa-solid fa-xmark alertDownload"></i></span>
-                            <h4 class="text-center text-black text-header">name Editor</h4>
-                            <br />
-                            <p class="text-black text-paragraph">information editor</p>
-                            <a href=""><p class="btn float-end">Download</p></a>
-                        </div>
+            <div class="main-container vertical-align pt-4 pb-4">
+                <div class="row align-items-center p-4">
+                    <div class="col-sm-12 col-md-6">
+                        <h3>WHAT DID I LEARN IN THIS PROJECT</h3>
+                        <p >These are the things I learned whilst making this project:
+                        <ul>
+                            <li>Working with API's</li>
+                            <li>Using Gradle</li>
+                        </ul>
+                        </p>
                     </div>
                 </div>
             </div>
